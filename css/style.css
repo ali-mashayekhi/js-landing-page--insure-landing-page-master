@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/********************************************/
+/* GENERAL */
+/********************************************/
+
+.primary-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 1.6rem;
+}
+
+.btn:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+/********************************************/
+/* HEADER */
+/********************************************/
+
+.header {
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+/********************************************/
+/* INTRO SECTION */
+/********************************************/
+
+.section-intro {
+  color: #fafafa;
+  position: relative;
+}
+
+.bg-pattern-intro-right-mobile-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-box {
+  width: 100%;
+}
+
+.intro-image-desktop {
+  display: none;
+}
+
+.intro-image-mobile {
+  display: block;
+}
+
+.intro-text-box {
+  background: url(../images/bg-pattern-intro-left-mobile.svg), #2d2640;
+  background-repeat: no-repeat;
+  padding: 9rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* intro-text-heading */
+.intro-text-description {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 2.8rem;
+}
+
+.intro-text-btn {
+  color: #fafafa;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 2px solid #fafafa;
+}
+
+.intro-horizonal-line {
+  height: 0.1rem;
+  width: 17rem;
+  background-color: hsl(273, 4%, 51%);
+  margin-top: 15rem;
+  margin-bottom: 3.2rem;
+}
+
+/********************************************/
+/* FOOTER */
+/********************************************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

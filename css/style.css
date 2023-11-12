@@ -16,19 +16,54 @@ body {
 /* GENERAL */
 /********************************************/
 
-.primary-heading {
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary {
   font-family: "DM Serif Display", serif;
   font-size: 4.5rem;
   font-weight: 400;
   text-align: center;
   line-height: 1.1;
+}
+
+.heading-primary {
   margin-bottom: 1.6rem;
 }
 
-.btn:link {
+.heading-secondary {
+  margin-bottom: 6.4rem;
+}
+
+.heading-tertiary {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
+}
+
+.btn-filled:link,
+.btn-filled:visited {
+  color: #fafafa;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 2px solid #fafafa;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3rem;
 }
 
 /********************************************/
@@ -69,6 +104,10 @@ body {
   align-items: center;
 }
 
+.intro-container {
+  background-color: #2d2640;
+}
+
 .image-box {
   width: 100%;
 }
@@ -82,7 +121,7 @@ body {
 }
 
 .intro-text-box {
-  background: url(../images/bg-pattern-intro-left-mobile.svg), #2d2640;
+  background: url(../images/bg-pattern-intro-left-mobile.svg);
   background-repeat: no-repeat;
   padding: 9rem 3rem;
 
@@ -101,24 +140,145 @@ body {
   margin-bottom: 2.8rem;
 }
 
-.intro-text-btn {
-  color: #fafafa;
-  display: inline-block;
-  padding: 1rem 3rem;
-  border: 2px solid #fafafa;
-}
-
 .intro-horizonal-line {
   height: 0.1rem;
-  width: 17rem;
+  width: 15rem;
   background-color: hsl(273, 4%, 51%);
   margin-top: 15rem;
+  margin-bottom: 3.8rem;
+}
+
+/********************************************/
+/* WHY US SECTION */
+/********************************************/
+
+.section-why-us {
+  padding-bottom: 6.4rem;
+  color: hsl(270, 9%, 17%);
+}
+
+.why-us-box {
+  display: grid;
+  grid-template-columns: 1;
+  justify-items: center;
+  padding: 0 2.5rem;
+  margin-bottom: 6.4rem;
+}
+
+.why-us-icon {
   margin-bottom: 3.2rem;
 }
 
+.why-us-description {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #837d87;
+  line-height: 1.7;
+}
+
+/********************************************/
+/* HOW WE WORK SECTION */
+/********************************************/
+
+.section-how-we-work {
+  padding-top: 6.4rem;
+  padding-bottom: 9.6rem;
+  color: #fafafa;
+}
+
+.how-we-work {
+  background: url(../images/bg-pattern-how-we-work-mobile.svg), #2d2640;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 7.6rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.8rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+}
+
+.btn-how:link,
+.btn-how:visited {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
+}
 /********************************************/
 /* FOOTER */
 /********************************************/
+
+.footer {
+  background: url(../images/bg-pattern-footer-mobile.svg);
+  padding: 9rem 0;
+  background-repeat: no-repeat;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.footer-horizonal-line {
+  height: 0.05rem;
+  width: 100%;
+  background-color: rgb(222, 222, 222);
+  margin-bottom: 4rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+  /* justify-items: center; */
+}
+
+.footer-nav-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #837d87;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav-items {
+  list-style: none;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-nav-item a:link,
+.footer-nav-item a:active {
+  text-transform: uppercase;
+  color: #2d2640;
+  text-decoration: none;
+}
+
+.footer-nav-item a:hover,
+.footer-nav-item a:visited {
+  color: #2d2640;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

@@ -1,0 +1,127 @@
+@media (min-width: 60em) {
+  html {
+    font-size: 66%;
+  }
+
+  .heading-primary,
+  .heading-secondary {
+    font-size: 7.1rem;
+    line-height: 0.9;
+    letter-spacing: 0.4px;
+  }
+
+  .heading-primary {
+    margin-bottom: 2.8rem;
+  }
+
+  .container {
+    padding: 0 4.8rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .close-menu-icon {
+    display: none;
+  }
+
+  .header-nav {
+    display: initial;
+  }
+
+  .nav-items {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+  sdadsa .header-nav-item:link,
+  .header-nav-item:visited {
+    color: #837d87;
+  }
+
+  .btn-nav:link,
+  .btn-nav:visited {
+    color: #2d2640;
+    border: 2px solid #2d2640;
+  }
+
+  /********************************************/
+  /* INTRO SECTION */
+  /********************************************/
+
+  .bg-pattern-intro-right-desktop-box {
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .bg-pattern-intro-left-desktop-box {
+    display: initial;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .intro {
+    background-color: #2d2640;
+    margin-bottom: 30rem;
+  }
+  .intro-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 4.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: initial;
+    gap: 3.6rem;
+  }
+
+  .intro-img-box {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+  }
+
+  .intro-image-mobile {
+    display: none;
+  }
+  .intro-image-desktop {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 11rem);
+  }
+
+  .bg-pattern-intro-right-mobile-box {
+    display: none;
+  }
+
+  .intro-text-box {
+    background: none;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: start;
+    padding: 11rem 0 13rem 0;
+  }
+
+  .intro-text-heading,
+  .intro-text-description {
+    text-align: left;
+  }
+
+  .intro-text-box .intro-horizonal-line {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 6rem;
+  }
+
+  .intro-horizonal-line {
+    margin: 15rem 0 0 0;
+  }
+}

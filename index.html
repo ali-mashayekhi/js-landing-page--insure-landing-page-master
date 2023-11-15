@@ -27,11 +27,12 @@
 
     <!-- Custom style -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
 
-    <title>Frontend Mentor | Insure landing page</title>
+    <title>Insure &mdash; Humanizing your insurance.</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <img class="header-logo" src="./images/logo.svg" alt="Insure logo" />
 
       <img
@@ -44,10 +45,26 @@
         src="./images/icon-close.svg"
         alt="Close menu icon"
       />
+      <nav class="header-nav">
+        <ul class="nav-items">
+          <li><a class="nav-item header-nav-item" href="">How we work </a></li>
+          <li><a class="nav-item header-nav-item" href="">Blog</a></li>
+          <li><a class="nav-item header-nav-item" href="">Account</a></li>
+          <li>
+            <a class="btn btn-nav nav-item" href="">View plans</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="section-intro">
       <div class="bg-pattern-intro-right-mobile-box">
         <img src="./images/bg-pattern-intro-right-mobile.svg" alt="" />
+      </div>
+      <div class="bg-pattern-intro-right-desktop-box">
+        <img src="./images/bg-pattern-intro-right-desktop.svg" alt="" />
+      </div>
+      <div class="bg-pattern-intro-left-desktop-box">
+        <img src="./images/bg-pattern-intro-left-desktop.svg" alt="" />
       </div>
       <div class="intro">
         <div class="intro-container">
@@ -59,11 +76,12 @@
             />
             <img
               class="intro-image-desktop"
-              src="./images/image-intro-mobile.jpg"
+              src="./images/image-intro-desktop.jpg"
               alt="A family with 2 boys are holding each others hands"
             />
           </div>
           <div class="intro-text-box">
+            <div class="intro-horizonal-line"></div>
             <h1 class="heading-primary intro-text-heading">
               Humanizing your insurance.
             </h1>
@@ -75,6 +93,8 @@
             <a class="btn btn-filled" href="#">View plans</a>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="intro-horizonal-line"></div>
       </div>
     </section>
@@ -153,43 +173,46 @@
         <div class="footer-horizonal-line"></div>
       </div>
       <div class="footer-content container">
-        <div class="nav-col">
+        <nav class="nav-col">
           <p class="footer-nav-header">Our company</p>
           <ul class="footer-nav-items">
-            <li class="footer-nav-item"><a href="">How we work</a></li>
-            <li class="footer-nav-item"><a href="">Why Insure?</a></li>
-            <li class="footer-nav-item"><a href="">Check price</a></li>
-            <li class="footer-nav-item"><a href="">Reviews</a></li>
+            <li><a class="footer-nav-item nav-item" href="">How we work</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Why Insure?</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Check price</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Reviews</a></li>
           </ul>
-        </div>
-        <div class="footer-nav-col">
+        </nav>
+        <nav class="footer-nav-col">
           <p class="footer-nav-header">Help me</p>
           <ul class="footer-nav-items">
-            <li class="footer-nav-item"><a href="">FAQ</a></li>
-            <li class="footer-nav-item"><a href="">Terms of use</a></li>
-            <li class="footer-nav-item"><a href="">Privacy policy</a></li>
-            <li class="footer-nav-item"><a href="">Cookies</a></li>
+            <li><a class="footer-nav-item nav-item" href="">FAQ</a></li>
+            <li>
+              <a class="footer-nav-item nav-item" href="">Terms of use</a>
+            </li>
+            <li>
+              <a class="footer-nav-item nav-item" href="">Privacy policy</a>
+            </li>
+            <li><a class="footer-nav-item nav-item" href="">Cookies</a></li>
           </ul>
-        </div>
-        <div class="nav-col">
+        </nav>
+        <nav class="nav-col">
           <p class="footer-nav-header">Contact</p>
           <ul class="footer-nav-items">
-            <li class="footer-nav-item"><a href="">Sales</a></li>
-            <li class="footer-nav-item"><a href="">Support</a></li>
-            <li class="footer-nav-item"><a href="">Live chat</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Sales</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Support</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Live chat</a></li>
           </ul>
-        </div>
-        <div class="nav-col">
+        </nav>
+        <nav class="nav-col">
           <p class="footer-nav-header">Others</p>
           <ul class="footer-nav-items">
-            <li class="footer-nav-item"><a href="">Careers</a></li>
-            <li class="footer-nav-item"><a href="">Press</a></li>
-            <li class="footer-nav-item"><a href="">Licenses</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Careers</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Press</a></li>
+            <li><a class="footer-nav-item nav-item" href="">Licenses</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
-    How we work Blog Account View plans
 
     <div class="attribution">
       Challenge by

@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  position: relative;
 }
 
 /********************************************/
@@ -55,6 +56,7 @@ body {
   padding: 1rem 2.8rem;
   font-size: 1.45rem;
   letter-spacing: 1.3px;
+  transition: all 0.3s;
 }
 
 .btn-filled:link,
@@ -65,6 +67,14 @@ body {
   border: 2px solid #fafafa;
 }
 
+.btn-filled:hover,
+.btn-filled:active,
+.btn-nav:hover,
+.btn-nav:active {
+  color: hsl(270, 9%, 17%);
+  background-color: #fafafa;
+}
+
 .nav-item:link,
 .nav-item:visited {
   font-size: 1.4rem;
@@ -72,6 +82,7 @@ body {
   letter-spacing: 1.3px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
 .margin-bottom-md {
@@ -81,7 +92,7 @@ body {
 /* HEADER */
 /********************************************/
 
-.header {
+.header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,6 +152,7 @@ body {
 
 .intro-image-mobile {
   display: block;
+  width: 100%;
 }
 
 .intro-text-box {
@@ -182,6 +194,11 @@ body {
 .section-why-us {
   padding-bottom: 6.4rem;
   color: hsl(270, 9%, 17%);
+}
+
+.why-us-body {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .why-us-box {
@@ -255,6 +272,11 @@ body {
   margin-bottom: 4rem;
 }
 
+.footer-social-link:hover img,
+.footer-social-link:active img {
+  filter: brightness(0.2);
+}
+
 .footer-horizonal-line {
   height: 0.05rem;
   width: 100%;
@@ -290,11 +312,13 @@ body {
 .footer-nav-item:link,
 .footer-nav-item:visited {
   color: #2d2640;
+  transition: all 0.3s;
 }
 
 .footer-nav-item:hover,
 .footer-nav-item:active {
-  color: #2d2640;
+  border-bottom: 1px solid #2d2640;
+  padding-bottom: 0.1rem;
 }
 
 .attribution {

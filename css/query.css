@@ -1,4 +1,5 @@
-@media (min-width: 60em) {
+/* 592px */
+@media (min-width: 37em) {
   html {
     font-size: 66%;
   }
@@ -8,6 +9,11 @@
     font-size: 7.1rem;
     line-height: 0.9;
     letter-spacing: 0.4px;
+    text-align: left;
+  }
+
+  .heading-secondary {
+    letter-spacing: 0.1px;
   }
 
   .heading-primary {
@@ -35,15 +41,32 @@
     gap: 2.4rem;
     align-items: center;
   }
-  sdadsa .header-nav-item:link,
+  .header-nav-item:link,
   .header-nav-item:visited {
     color: #837d87;
+  }
+
+  .header-nav-item:hover,
+  .header-nav-item:active {
+    color: #2d2640;
   }
 
   .btn-nav:link,
   .btn-nav:visited {
     color: #2d2640;
     border: 2px solid #2d2640;
+  }
+
+  .btn-nav:hover,
+  .btn-nav:active {
+    color: #f9f9f9;
+    background-color: #2d2640;
+  }
+
+  .header {
+    position: relative;
+    z-index: 9999;
+    background: #fff;
   }
 
   /********************************************/
@@ -53,7 +76,7 @@
   .bg-pattern-intro-right-desktop-box {
     display: initial;
     position: absolute;
-    top: 0;
+    top: -4.5rem;
     right: 0;
     z-index: 999;
   }
@@ -110,7 +133,6 @@
     padding: 11rem 0 13rem 0;
   }
 
-  .intro-text-heading,
   .intro-text-description {
     text-align: left;
   }
@@ -123,5 +145,101 @@
 
   .intro-horizonal-line {
     margin: 15rem 0 0 0;
+  }
+
+  /********************************************/
+  /* WHY US SECTION */
+  /********************************************/
+
+  .section-why-us {
+    padding: 2.8rem 0 9.6rem 0;
+  }
+
+  .heading-secondary {
+    margin-bottom: 9.6rem;
+  }
+  .why-us-body {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.8rem;
+  }
+
+  .why-us-box {
+    justify-items: start;
+    padding: 0;
+  }
+
+  .why-us-description {
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  /********************************************/
+  /* HOW WE WORK SECTION */
+  /********************************************/
+
+  .section-how-we-work {
+    padding-bottom: 17rem;
+  }
+
+  .how-we-work {
+    background: url(../images/bg-pattern-how-we-work-desktop.svg), #2d2640;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    padding: 6.2rem 8.2rem;
+  }
+
+  .how-heading {
+    font-size: 5.6rem;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .btn-how {
+    justify-self: end;
+  }
+
+  /********************************************/
+  /* FOOTER */
+  /********************************************/
+
+  .footer {
+    background: url(../images/bg-pattern-footer-desktop.svg), rgb(249, 249, 249);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 5.6rem;
+  }
+
+  .footer-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    grid-column: 1;
+    justify-self: start;
+  }
+  .footer-social-links {
+    grid-column: 2;
+    justify-self: end;
+  }
+  .footer-heading,
+  .footer-horizonal-line {
+    grid-column: 1 / span 2;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+  }
+
+  .footer-nav-header,
+  .footer-nav-items li {
+    text-align: left;
   }
 }

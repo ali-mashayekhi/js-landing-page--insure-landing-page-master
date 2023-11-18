@@ -110,7 +110,7 @@ body {
   height: 100vh;
   width: 100vw;
   background: hsl(270, 9%, 17%);
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 
   /* 1) Hide it visually */
   opacity: 0;
@@ -127,7 +127,7 @@ body {
   position: fixed;
   z-index: 999999;
   bottom: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 
   /* 1) Hide it visually */
   opacity: 0;
@@ -155,23 +155,20 @@ body {
   visibility: visible;
 }
 
-.nav-open .nav-items {
+.nav-items {
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3.6rem;
 }
 
-.nav-open .nav-items li {
-  list-style: none;
-}
-
-.nav-open .nav-items li:last-child {
+.nav-items li:last-child {
   width: 100%;
 }
 
-.nav-open .btn-nav:link,
-.nav-open .btn-nav:visited {
+.btn-nav:link,
+.btn-nav:visited {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -181,8 +178,8 @@ body {
   font-weight: 400;
 }
 
-.nav-open .header-nav-item:link,
-.nav-open .header-nav-item:visited {
+.header-nav-item:link,
+.header-nav-item:visited {
   color: #fafafa;
   font-size: 2rem;
   font-weight: 400;

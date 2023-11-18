@@ -24,6 +24,10 @@
     padding: 0 4.8rem;
   }
 
+  /********************************************/
+  /* HEADER */
+  /********************************************/
+
   .menu-icon {
     display: none;
   }
@@ -32,7 +36,15 @@
   }
 
   .header-nav {
-    display: initial;
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    position: static;
+    background: none;
+    height: auto;
+    width: auto;
+    padding: 0;
   }
 
   .nav-items {

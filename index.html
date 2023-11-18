@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/query.css" />
 
+    <script defer src="./js/script.js"></script>
+
     <title>Insure &mdash; Humanizing your insurance.</title>
   </head>
   <body>
@@ -36,16 +38,19 @@
       <div class="header-box container">
         <img class="header-logo" src="./images/logo.svg" alt="Insure logo" />
 
-        <img
-          class="menu-icon"
-          src="./images/icon-hamburger.svg"
-          alt="Menu icon"
-        />
-        <img
-          class="close-menu-icon"
-          src="./images/icon-close.svg"
-          alt="Close menu icon"
-        />
+        <div class="menu-btn">
+          <img
+            class="menu-icon"
+            src="./images/icon-hamburger.svg"
+            alt="Menu icon"
+          />
+          <img
+            class="close-menu-icon"
+            src="./images/icon-close.svg"
+            alt="Close menu icon"
+          />
+        </div>
+
         <nav class="header-nav">
           <ul class="nav-items">
             <li>
@@ -58,6 +63,11 @@
             </li>
           </ul>
         </nav>
+        <img
+          src="./images/bg-pattern-mobile-nav.svg"
+          class="bg-pattern-mobile-nav"
+          alt="Mobile nav background pattern"
+        />
       </div>
     </header>
     <section class="section-intro">
@@ -161,16 +171,16 @@
           alt="Insure logo"
         />
         <div class="footer-social-links">
-          <a href=#"" class="footer-social-link">
+          <a href="#" class="footer-social-link">
             <img src="./images/icon-facebook.svg" alt="Facebook icon" />
           </a>
-          <a href=#"" class="footer-social-link">
+          <a href="#" class="footer-social-link">
             <img src="./images/icon-twitter.svg" alt="Twitter icon"
           /></a>
-          <a href=#"" class="footer-social-link">
+          <a href="#" class="footer-social-link">
             <img src="./images/icon-pinterest.svg" alt="Pinterest icon"
           /></a>
-          <a href=#"" class="footer-social-link">
+          <a href="#" class="footer-social-link">
             <img src="./images/icon-instagram.svg" alt="Instagram icon"
           /></a>
         </div>
@@ -180,9 +190,15 @@
         <nav class="nav-col">
           <p class="footer-nav-header">Our company</p>
           <ul class="footer-nav-items">
-            <li><a class="footer-nav-item nav-item" href="#">How we work</a></li>
-            <li><a class="footer-nav-item nav-item" href="#">Why Insure?</a></li>
-            <li><a class="footer-nav-item nav-item" href="#">Check price</a></li>
+            <li>
+              <a class="footer-nav-item nav-item" href="#">How we work</a>
+            </li>
+            <li>
+              <a class="footer-nav-item nav-item" href="#">Why Insure?</a>
+            </li>
+            <li>
+              <a class="footer-nav-item nav-item" href="#">Check price</a>
+            </li>
             <li><a class="footer-nav-item nav-item" href="#">Reviews</a></li>
           </ul>
         </nav>
@@ -222,7 +238,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/ali-mashayekhi">Your Name Here</a>.
+      >. Coded by
+      <a href="https://github.com/ali-mashayekhi">Your Name Here</a>.
     </div>
   </body>
 </html>

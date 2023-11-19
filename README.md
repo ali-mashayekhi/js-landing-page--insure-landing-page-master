@@ -11,7 +11,7 @@ This project is made by only html and css and vanilla javascript so you just nee
 ### Links
 
 - [Live-Demo](https://ali-insure-landing-page-master.netlify.app/)
-- [Solution URL](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8/hub)
+- [Solution URL](https://www.frontendmentor.io/solutions/insure-landing-page-yofRJ7MiSi)
 
 ### Built with
 
